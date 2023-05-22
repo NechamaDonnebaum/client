@@ -19,7 +19,7 @@ const RecipeCard = ({ recipe, src, setRefresh }) => {
         if (src == "api")
             name = recipe?.name;
         else name = recipe?.title
-        if (name.length > 65)
+        if (name?.length > 65)
             return name.substring(0, 65) + "...";
         return name;
     }

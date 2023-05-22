@@ -9,12 +9,8 @@ import ModeCommentIcon from '@mui/icons-material/ModeComment';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 
-// let commentList = [{ "msg": "jkl", "date": "987" }, { "msg": "jkl", "date": "987" }]
-
 
 const DisplayComment = ({commentList}) => {
-
-
 
     return (
         <List
