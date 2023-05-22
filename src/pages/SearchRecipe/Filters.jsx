@@ -116,9 +116,7 @@ function Filters({ where, setWhere }) {
             onChange={(event, value) => { debugger; setWhere({ ...where, maxReadyTime: value }) }}
           />
         </Stack>
-        {(where.includeIngredients?.length != 0 || where.excludeIngredients?.length != 0 || where.setTypes?.length != 0 || where.selectedDiets?.length != 0) &&
-          <Divider variant="middle" sx={{ padding: 2 }} />
-        }
+        {(where.includeIngredients?.length != 0 || where.excludeIngredients?.length != 0 || where.selectedTypes?.length != 0 || where.selectedDiets?.length != 0) && <Divider variant="middle" sx={{ margin: 2 }} />}
         <div style={{ flexWrap: "wrap", justifyContent: "flex-start", display: "flex" }}> {where.includeIngredients?.length != 0 &&
           <SelectedFilter name="includeIngredients" where={where} setWhere={setWhere}></SelectedFilter>}
           {where.excludeIngredients?.length != 0 &&
